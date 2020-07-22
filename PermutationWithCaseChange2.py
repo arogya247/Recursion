@@ -5,15 +5,16 @@ def solve(ip,op):
         print(op)
         return
     
-    if ip[0].isdigit()==False:
+    if ip[0].isalpha()==True:
         op1 = op
         op2 = op
         
-        op1+=ip[0]
-        if ip[0].islower()==True:
-            op2+=ip[0].upper()
-        else:
-            op2+=ip[0].lower()
+        op1+=ip[0].lower()
+        op2+=ip[0].upper()
+        # if ip[0].islower()==True:
+        #     op2+=ip[0].upper()
+        # else:
+        #     op2+=ip[0].lower()
         ip=ip[1:]
         solve(ip,op1)
         solve(ip,op2)
@@ -25,5 +26,9 @@ def solve(ip,op):
         ip=ip[1:]
         solve(ip,op1)
         return
-        
-solve("A1b2C","")
+
+
+
+solve("A1b2","")
+    
+
