@@ -1,4 +1,4 @@
-# permutation with case change
+# permutation with case change (lowercase input only)
 
 
 def solve(ip,op):
