@@ -11,10 +11,6 @@ def solve(ip,op):
         
         op1+=ip[0].lower()
         op2+=ip[0].upper()
-        # if ip[0].islower()==True:
-        #     op2+=ip[0].upper()
-        # else:
-        #     op2+=ip[0].lower()
         ip=ip[1:]
         solve(ip,op1)
         solve(ip,op2)
